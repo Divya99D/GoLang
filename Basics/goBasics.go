@@ -27,6 +27,10 @@ func modify3 (a, b string) (string, string, string){
 
 func main() {
 	fmt.Println("GO BASICS")
+	const C = "constant";
+	fmt.Println("Constant initailised:", C)
+	fmt.Printf("Type: %T | Value: %v\n", C, C)
+
 	var x int = 590
 	y:=10
 
@@ -98,10 +102,10 @@ func main() {
 	fmt.Println("addition1 :: ",add1(2,3));
 	fmt.Println("addition2 :: ",add2(2,3));
 
-	E, P := swap2("Easy" , "Peasy");
-	fmt.Println("func returns 2 values :: ", P, E)
-	E, P, Z := modify3("Easy" , "Peasy");
+	e, p := swap2("Easy" , "Peasy");
+	fmt.Println("func returns 2 values :: ", p, e)
+	e, p, z := modify3("Easy" , "Peasy");
 
-	fmt.Println("func returns 2 values :: ", E, P, Z)
+	fmt.Println("func returns 2 values :: ", e, p, z)
 
 }
